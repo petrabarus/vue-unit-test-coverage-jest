@@ -3,6 +3,10 @@ module.exports = {
   transform: {
     '^.+\\.vue$': 'vue-jest'
   },
+  modulePathIgnorePatterns: [
+    "src/main.ts",
+    "src/registerServiceWorker.ts"
+  ],
   collectCoverage: true,
   collectCoverageFrom: [
     "src/**/*.{ts,vue}", 
