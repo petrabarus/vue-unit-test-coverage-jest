@@ -22,5 +22,8 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         with:
           args: >
-            -X
             -Dsonar.qualitygate.wait=true
+      - name: Cache Gradle packages
+        uses: actions/cache@v2
+        with:
+        path: ~/.npm
