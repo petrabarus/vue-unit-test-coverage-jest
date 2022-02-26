@@ -26,4 +26,4 @@ jobs:
       - name: Cache Gradle packages
         uses: actions/cache@v2
         with:
-        path: ~/.npm
+          path: ~/.npm
